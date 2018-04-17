@@ -1,0 +1,76 @@
+Afganistan Digital Collections Management (ADCM or DCM)
+
+Author: Xueheng Wan
+Email: wwanxh@gmail.com
+
+Document Conersion Patterns Supported:
+A : TIFF -> 3 versions -> PDF/A 3B with Raws Moving (Lossless, lossy 50 30) 
+A1: TIFF -> 3 versions -> PDF/A 3B with Raws Copying (Lossless, lossy 50 30) 
+A2: TIFF -> 3 versions -> PDF/A 3B with Raws Remaining (Lossless, lossy 50 30) 
+B1: TIFF -> PDF/A 3B with RAWs Moving
+B2: TIFF -> PDF/A 3B with RAWs Copying
+B3: TIFF -> PDF/A 3B only
+	*(Customized Quality Loss Level of Compression) //100-lossless, not linear for 0-99
+C1: PDF/A 3B -> JP2 -> TIFF (JP2 RETAINED)
+C2: PDF/A 3B -> TIFF (JP2 NOT RETAINED)
+
+v2.0 - 09/15/2017
+ -New Iteration
+	- Performance Improved
+	- Modes reconstructed (Please see description above)
+		-Mode A, A1, A2, B1, B2, B3, C1, C2
+	- Notes Embeded
+		-If a note found with a document, then the note will be embeded into root metadata
+			of the document PDF file
+	- Code sturcture optimized
+	- Integrated Directory_Name_Trimmer (correct folder's illegal name before proessing) and 
+		Directory_Files_Trimmer (remove all trash file after completion) into main program
+	- Bugs handled
+-------------------------------------------------------------------------------------------------
+v1.5 & v1.6 - 07/26/2017
+ - Invalid or unsupported files will be skipped!
+	- A txt file containning all error files will be automatically created if needed.
+ - Process flow path has been changed!
+	- Each tiff file will be converted to 4 versions (Lossless, compression level 30, 40, 50) at the same time. It helps to improve performance in processing some folders with only containing less 10 files.
+
+V1.3 - 07/19/2017
+ - Whitespaces in Filename Bug Handled!
+	- Folder Analyzer right now can detect and remove all whitespaces existing in each filename if necessary.
+	  The filename which contains whitespaces will be renamed before conversions. 
+
+V1.2 - 06/07/2017
+ - Bugs Fixed!
+
+V1.1 - 06/01/2017
+ - 2 New TIFFs to PDF/A-2B Conversion Mode Added
+	- Moving TIFFs and other log files from source directory to target directory
+	- Copying TIFFs and other log files from source directory to target directory
+ - Compression Level Can be chosen now!
+	- Supporting Lossless or Loss Conversion (New Field added into GUI to indicate the level of compression)
+	- Notice for Choosing a Compression Level:
+		For the JPEG-2000 image format, quality is mapped using a non-linear equation to the compression 
+		ratio required by the Jasper library. This non-linear equation is intended to loosely approximate 
+		the quality provided by the JPEG v1 format. The default quality value 100, a request for non-lossy 
+		compression. A quality of 75 results in a request for 16:1 compression.
+		
+ - Performance Improved!
+	- Multi-Threads Supporting
+	- Almost 5 times faster than previous version
+ - Bugs Fixed!
+
+V1.0 - 05/21/2017
+ - Conversion from TIFFs to JPEG2000 to PDF/A-2B (lossless)
+ - PDF/A-B2 Root level and Page level Metadata Inserting and Handling developed
+ - Conversion from PDF/A-2B to JPEG2000 to TIFFs (lossless)
+ - Metadata Handling and Conversion between Formats
+ - PDF/A-B2 Root-Level Metadata Editor developed supporting dc (DublinCore) xmp properties editing
+ - DCM GUI and RootXMP Metadata Handler GUI Developed
+
+
+
+
+
+
+
+
+
