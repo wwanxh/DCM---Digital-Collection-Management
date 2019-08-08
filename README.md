@@ -7,6 +7,8 @@ DCM is a digital documents organizing software. For documents grouped by titles,
 
 The software has processed and tested around 1,5000 titles (roughly 1 million pages of books) at The University of Arizona Libraries for Afghanistan digital collections team.
 
+The goals of this project are to (1) demostrate **the research(https://ejournals.bc.edu/ojs/index.php/ital/article/view/9878/pdf)**
+
 The Project of Afghanistan digital collections Website:  http://www.afghandata.org
 
 ***
@@ -29,7 +31,7 @@ The Project of Afghanistan digital collections Website:  http://www.afghandata.o
 
 * **Root XMP Editor:** `A tool to add dublin core and xmp properties into root level metadata of the generated PDF/A2`
 
-* Text Layer Editor: Under developing
+* Text Layer Editor: Testing
 
 * Hidden Layer Membership Support: Testing
 
