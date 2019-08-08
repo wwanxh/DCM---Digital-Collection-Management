@@ -3,11 +3,11 @@
 
 **## ABOUT THIS PROJECT**
 
-DCM is a digital documents organizing software. For documents grouped by titles, it loss-less compresses and converts raw textual documents from TIFF to JP2, embeds JP2 files into a single PDF/A2 file. Informations of XMP, ICC, special notes, metadata, and attachment(optional) are embedded along with images. In addition, DCM provides bidirectional conversions that supports both conversions from raw document to PDF/A2 and from PDF/A2 to raw document. 
+DCM is a digital documents organizing software, it take advantages of PDF/A format. A PDF/A file is trated as a container so that all associated information of a book, such as contents, images, texts, metadata, color profile, special notes, and attachment, all those can be embed in one single file. For documents grouped by titles, it loss-less compresses and converts raw textual documents from TIFF to JP2, embeds JP2 files into a single PDF/A2 file. Informations of XMP, ICC, special notes, metadata, and attachment(optional) are embedded along with images. In addition, DCM provides bidirectional conversions that supports both conversions from raw document to PDF/A2 and from PDF/A2 to raw document. 
 
 The software has processed and tested around 1,5000 titles (roughly 1 million pages of books) at The University of Arizona Libraries for Afghanistan digital collections team.
 
-The goals of this project are to (1) demostrate **the research(https://ejournals.bc.edu/ojs/index.php/ital/article/view/9878/pdf)**
+The goals of this project were to (1) demostrate **[the research](https://ejournals.bc.edu/ojs/index.php/ital/article/view/9878/pdf)**, (2) increase storage efficiency in a large extent for digitized archivals, and (3) provides a concise and efficient orgnization so that easy access and management can be acheived. As a result, the project successfully demostrated the research; and the new structure saves up to 70% of storage for the same amount of documents compared to previous ones; documents can be easily managed and retrived.
 
 The Project of Afghanistan digital collections Website:  http://www.afghandata.org
 
